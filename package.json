@@ -1,0 +1,30 @@
+{
+  "name": "dr-quiz-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "لوحة تحكم أكاديمية: أسئلة PDF → كويزات تليجرام + بث روابط المحاضرات في قروبات واتساب",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "sample:pdf": "node scripts/make-sample-pdf.js",
+    "test:parse": "node scripts/test-parse.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.2.0",
+    "baileys": "7.0.0-rc14",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "grammy": "^1.48.0",
+    "multer": "^2.0.2",
+    "pdfjs-dist": "^6.5.438",
+    "pino": "^10.4.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
