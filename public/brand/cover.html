@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>هدفك — الغلاف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Reem+Kufi:wght@400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brand.css">
+<style>
+  html, body { width: 1920px; height: 1080px; }
+  .board { width: 1920px; height: 1080px; }
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    padding: 0 128px 26px;
+  }
+  .text { flex: 1 1 auto; padding-bottom: 8px; }
+  .chev { margin: 26px 0 0; }
+  .logo-block { width: 620px; height: 620px; }
+  .logo-wrap { width: 396px; height: 396px; }
+  .card-diamond { width: 278px; height: 278px; }
+  .ring.r1 { width: 330px; height: 330px; }
+  .ring.r2 { width: 382px; height: 382px; }
+  .logo-glow { width: 520px; height: 520px; }
+  .logo-dot { left: 64px; bottom: 100px; }
+  .foot { left: 128px; right: 128px; bottom: 62px; }
+</style>
+</head>
+<body>
+<section class="board">
+  <div class="glow teal"></div>
+  <div class="glow orange"></div>
+  <div class="frame"></div>
+
+  <div class="content">
+    <div class="text">
+      <div class="eyebrow"><span class="dia"></span> سلسلة هدفك للقدرات</div>
+      <div class="name">
+        <span class="title">دكتور</span>
+        <span class="first">أيمن</span>
+      </div>
+      <div class="brandline">
+        <span class="wordmark">هدفك</span>
+        <span class="dot"></span>
+      </div>
+      <div class="chips">
+        <span class="chip hot">اختبارات تليجرام</span>
+        <span class="chip">بث واتساب</span>
+        <span class="chip">إحصائيات الطلاب</span>
+      </div>
+    </div>
+
+    <svg class="chev" width="156" height="330" viewBox="0 0 156 330" fill="none">
+      <defs>
+        <linearGradient id="cg" x1="130" y1="12" x2="24" y2="318" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#3FE0D4"/>
+          <stop offset="1" stop-color="#00A099"/>
+        </linearGradient>
+      </defs>
+      <path d="M126 22 L36 165 L126 308" stroke="url(#cg)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M96 22 L18 165 L96 308" stroke="#E84E1B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+    </svg>
+
+    <div class="logo-block">
+      <div class="logo-glow"></div>
+      <div class="ring r2"></div>
+      <div class="ring r1"></div>
+      <div class="logo-wrap">
+        <div class="card-diamond"></div>
+        <img class="logo" src="hadafuk-strokes.png" alt="شعار هدفك">
+      </div>
+      <span class="logo-dot"></span>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span class="ltr">@hadafukbot</span>
+    <span>سلسلة هدفك للقدرات</span>
+  </footer>
+</section>
+</body>
+</html>
